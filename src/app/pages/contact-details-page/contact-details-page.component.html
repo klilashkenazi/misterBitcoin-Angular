@@ -1,0 +1,8 @@
+<section *ngIf="contact$ | async as contact">
+    <button (click)="onBack()" >Back</button>
+    <img src="https://robohash.org/{{contact._id}}?set=set5" alt="">
+    <p>{{contact.name}}</p>
+    <p>{{contact.phone}}</p>
+    <p>{{contact.email}}</p>
+
+</section>

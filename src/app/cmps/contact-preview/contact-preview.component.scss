@@ -1,0 +1,55 @@
+@import "../../../assets/scss/basics/base";
+
+.contact-preview {
+    height: 80px;
+    width: 300px;
+    box-shadow: -1px 1px 8px #00000045;
+    border-radius: 3px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    .info {
+        a {
+            flex-grow: 1;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+    
+            img {
+              height: 80px;
+            }
+        }
+
+
+    }
+
+
+
+    .actions {
+        display: flex;
+        gap: 10px;
+        // opacity: 0;
+        // transform: translateX(-10%);
+        transition-duration: 0.3s;
+        transition-property: transform, opacity;
+
+        .remove-btn {
+            width: 2em;
+            height: 2em;
+            background-color: inherit;
+            border-radius: 100%;
+            border: 1px solid black;
+            transition: 0.15s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: orangered;
+                color: white;
+            }
+        }
+    }
+}
